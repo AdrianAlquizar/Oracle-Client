@@ -1,0 +1,83 @@
+.jupiter-ui {
+    font-family: Arial, sans-serif;
+    color: #fff;
+    background-color: #1c1c1c;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .jupiter-header {
+    background-color: #333;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  .jupiter-header h1 {
+    margin: 0;
+  }
+  
+  .jupiter-header nav a {
+    color: #fff;
+    margin: 0 1rem;
+    text-decoration: none;
+  }
+  
+  .jupiter-main {
+    padding: 2rem;
+    flex: 1;
+  }
+  
+  .swap-section, .charts-section, .portfolio-section {
+    margin-bottom: 2rem;
+  }
+  
+  .swap-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .token-input {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .token-input label {
+    margin-bottom: 0.5rem;
+  }
+  
+  .token-input input {
+    padding: 0.5rem;
+    border: 1px solid #555;
+    border-radius: 4px;
+    background-color: #2b2b2b;
+    color: #fff;
+  }
+  
+  .swap-button {
+    padding: 0.5rem;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .swap-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .chart-placeholder, .portfolio-placeholder {
+    background-color: #333;
+    padding: 2rem;
+    border-radius: 4px;
+    text-align: center;
+  }
+  
+  .jupiter-footer {
+    background-color: #333;
+    padding: 1rem;
+    text-align: center;
+  }
+  
