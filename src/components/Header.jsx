@@ -4,6 +4,8 @@ import { motion } from 'framer-motion';
 import logo from '../components/logo.svg'; // Assuming you have this logo
 import heroLogo from '../components/logo.png'; // Assuming you have this logo
 import { WalletModalButton } from '@solana/wallet-adapter-react-ui';
+import { Link } from 'react-router-dom';
+
 
 function Header() {
   const walletModalButtonRef = useRef(null); // Create a ref for the WalletModalButton
@@ -38,13 +40,13 @@ function Header() {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5, delay: 0.2 }}
         >
-           <button
-            className="bg-gradient-to-r from-[#40E0D0] to-[#4169E1] text-white px-6 py-2 rounded-full font-medium hover:opacity-90 transition-opacity"
-            
-          >
-            <WalletModalButton ref={walletModalButtonRef} style={{ display: 'none' }} />
-            Launch App
-          </button>
+          <Link to="/launch">
+            <button
+              className="bg-gradient-to-r from-[#40E0D0] to-[#4169E1] text-white px-6 py-2 rounded-full font-medium hover:opacity-90 transition-opacity"
+            >
+              Launch App
+            </button>
+          </Link>
         </motion.div>
       </header>
 
