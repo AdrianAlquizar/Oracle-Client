@@ -65,14 +65,14 @@ function Header() {
           </motion.div>
 
           {/* Hero Text */}
-          <motion.h1
+          <motion.h2
             className="text-5xl font-bold mb-4 text-[#38b6ff]"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.6 }}
           >
             Stakk Finance
-          </motion.h1>
+          </motion.h2>
           <motion.p
             className="text-xl text-gray-300 max-w-2xl mx-auto"
             initial={{ opacity: 0, y: 20 }}
